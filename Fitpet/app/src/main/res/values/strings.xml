@@ -4,5 +4,8 @@
     <string name="app_name">Fitpet</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="y_orientation">Y</string>
+    <string name="x_orientation">X</string>
+    <string name="z_oritentation">Z</string>
 
 </resources>
