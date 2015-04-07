@@ -7,6 +7,8 @@
     <string name="stopped">Pedometer stopped.</string>
 
     <string name="steps">steps</string>
+    <string name="Points">POINTS</string>
+    <string name="Mood">HEALTH</string>
     <string name="kilometers">kilometers</string>
     <string name="miles">miles</string>
     <string name="steps_per_minute">steps / minute</string>
@@ -17,6 +19,12 @@
     <string name="inches">inches</string>
     <string name="kilograms">kilograms</string>
     <string name="pounds">pounds</string>
+
+    <string name="Fries">Fries</string>
+    <string name="Pizza">Pizza</string>
+    <string name="Milk">Milk</string>
+    <string name="Carrot">Carrots</string>
+    <string name="Kale">Kale</string>
 
     <string name="desired_pace">Desired pace:</string>
     <string name="desired_speed">Desired speed:</string>
