@@ -7,56 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5562cb1-1081-454e-b2ca-699bb186be88" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\fit-pedometer.apk" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\CaloriesNotifier$Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\CaloriesNotifier.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\DistanceNotifier$Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\DistanceNotifier.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Pedometer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R$xml.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\R.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\Settings.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepBuzzer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepDisplayer$Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepDisplayer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$ICallback.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService$StepBinder.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\StepService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\out\production\fit-pedometer\name\bagi\levente\pedometer\preferences\StepLengthPreference.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Joseph\Documents\GitHub\Fitpet\pedometer implementation\res\layout-v14\main.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/preferences/BodyWeightPreference.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/preferences/BodyWeightPreference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/preferences/EditMeasurementPreference.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/preferences/EditMeasurementPreference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/PaceNotifier.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/PaceNotifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/PedometerSettings.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/PedometerSettings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/SpeakingTimer.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/SpeakingTimer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/SpeedNotifier.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/SpeedNotifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/StepDetector.class" afterPath="$PROJECT_DIR$/pedometer implementation/out/production/fit-pedometer/name/bagi/levente/pedometer/StepDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/Pedometer.java" afterPath="$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/Pedometer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/res/layout/main.xml" afterPath="$PROJECT_DIR$/pedometer implementation/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/.idea/misc.xml" afterPath="$PROJECT_DIR$/pedometer implementation/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedometer implementation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/pedometer implementation/.idea/workspace.xml" />
     </list>
     <ignored path="Fitpet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,13 +35,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pedometer implementation/res/layout/main.xml">
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29557523" vertical-offset="1550" max-vertical-offset="4046">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1550" max-vertical-offset="4046">
               <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
@@ -137,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepDisplayer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StepDisplayer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/StepDisplayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1598">
+            <state vertical-scroll-proportion="1.0860034" vertical-offset="257" max-vertical-offset="1224">
               <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
               <folding />
             </state>
@@ -219,28 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitpet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Fitpet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +190,28 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fitpet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fitpet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,7 +402,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1388889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1375" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33933163" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -888,14 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/StepDisplayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1224">
-          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/Pedometer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5491" max-vertical-offset="7752">
@@ -905,12 +848,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pedometer implementation/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29557523" vertical-offset="1550" max-vertical-offset="4046">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1550" max-vertical-offset="4046">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pedometer implementation/src/name/bagi/levente/pedometer/StepDisplayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0860034" vertical-offset="257" max-vertical-offset="1224">
+          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
           <folding />
         </state>
       </provider>
