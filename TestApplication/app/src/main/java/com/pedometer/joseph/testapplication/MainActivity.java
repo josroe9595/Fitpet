@@ -1,39 +1,27 @@
 package com.pedometer.joseph.testapplication;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
-import android.content.ServiceConnection;
 import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.IBinder;
-import android.os.Message;
-import android.preference.PreferenceManager;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.util.Log;
+import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.ImageView;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
 
 
 
 public class MainActivity extends Activity{
-    private int mInterval = 3000; // 5 seconds by default, can be changed later
+    private int mInterval = 1000; // 5 seconds by default, can be changed later
     private Handler mHandler;
     private int hInterval = 60000;
     private Handler hHandler;
@@ -41,7 +29,7 @@ public class MainActivity extends Activity{
     //private PedometerSettings mPedometerSettings;
     //private Utils mUtils;
 
-    private TextView mStepValueView;
+    private ProgressBar mStepValueView;
     private TextView mCoinView;
     private TextView mDistanceValueView;
     private TextView mSpeedValueView;
@@ -79,8 +67,17 @@ public class MainActivity extends Activity{
     private int numSteps;
     private int Threshold;
     private int ThreshMax;
+    private int Hearts;
+    private ImageButton[] heartStats = new ImageButton[5];
+    private ImageView cIm;
+    private AnimationDrawable anim0;
+    private AnimationDrawable anim1;
+    private AnimationDrawable anim2;
+    private AnimationDrawable anim3;
+    private AnimationDrawable anim4;
 
-
+    //Animation animation;
+    //Texture petTexture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,19 +90,103 @@ public class MainActivity extends Activity{
         //mPaceValue = 0;
 
         setContentView(R.layout.activity_main);
-        mStepValueView = (TextView)findViewById(R.id.healthView);
+
+
+
+
+        BitmapDrawable frame1 = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.c1);
+        BitmapDrawable frame2 = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.c2);
+        BitmapDrawable frame3 = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.c3);
+        BitmapDrawable frame4 = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.c4);
+        BitmapDrawable frameb = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.cb);
+        BitmapDrawable framea = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.ca);
+        BitmapDrawable framep = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.cp);
+        BitmapDrawable frameo = (BitmapDrawable) getResources().getDrawable(
+                R.drawable.co);
+
+        anim0 = new AnimationDrawable();
+        anim0.setOneShot(true);
+        anim0.addFrame(frame1,100);
+
+        anim1 = new AnimationDrawable();
+        anim1.setOneShot(true);
+        anim1.addFrame(frame1, 200);
+        anim1.addFrame(frame2, 200);
+        anim1.addFrame(frame3, 200);
+        anim1.addFrame(frame4, 200);
+        anim1.addFrame(frameb, 200);
+        anim1.addFrame(frame3, 200);
+        anim1.addFrame(frame2, 200);
+        anim1.addFrame(frame1, 200);
+
+        anim2 = new AnimationDrawable();
+        anim2.setOneShot(true);
+        anim2.addFrame(frame1, 200);
+        anim2.addFrame(frame2, 200);
+        anim2.addFrame(frame3, 200);
+        anim2.addFrame(frame4, 200);
+        anim2.addFrame(framea, 200);
+        anim2.addFrame(frame3, 200);
+        anim2.addFrame(frame2, 200);
+        anim2.addFrame(frame1, 200);
+
+        anim3 = new AnimationDrawable();
+        anim3.setOneShot(true);
+        anim3.addFrame(frame1, 200);
+        anim3.addFrame(frame2, 200);
+        anim3.addFrame(frame3, 200);
+        anim3.addFrame(frame4, 200);
+        anim3.addFrame(framep, 200);
+        anim3.addFrame(frame3, 200);
+        anim3.addFrame(frame2, 200);
+        anim3.addFrame(frame1, 200);
+
+        anim4 = new AnimationDrawable();
+        anim4.setOneShot(true);
+        anim4.addFrame(frame1, 200);
+        anim4.addFrame(frame2, 200);
+        anim4.addFrame(frame3, 200);
+        anim4.addFrame(frame4, 200);
+        anim4.addFrame(frameo, 200);
+        anim4.addFrame(frame3, 200);
+        anim4.addFrame(frame2, 200);
+        anim4.addFrame(frame1, 200);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        mStepValueView = (ProgressBar)findViewById(R.id.healthView);
         mCoinView = (TextView)findViewById(R.id.coinView);
 
         hunger = 100;
         happiness = 100;
-        coins = 0;
+        coins = 100;
 
+        Hearts = 5;
         previousY = 0;
         currentY = 0;
         numSteps = 0;
         Threshold = 5;
         ThreshMax = 25;
-        mStepValueView.setText(String.valueOf(hunger));
+        mStepValueView.setProgress(hunger); //String.valueOf(hunger));
 
         mCoinView.setText(String.valueOf(coins));
 
@@ -115,7 +196,16 @@ public class MainActivity extends Activity{
         numCarrots = 0;
         numKale = 0;
 
+        cIm = (ImageView) findViewById(R.id.cIM);
+        cIm.setBackground(anim0);
+
         ImageButton buyB = (ImageButton)findViewById(R.id.buyBanana);
+
+        heartStats[0] = (ImageButton)findViewById(R.id.h1);
+        heartStats[1] = (ImageButton)findViewById(R.id.h2);
+        heartStats[2] = (ImageButton)findViewById(R.id.h3);
+        heartStats[3] = (ImageButton)findViewById(R.id.h4);
+        heartStats[4] = (ImageButton)findViewById(R.id.h5);
 
         buyB.setOnClickListener(
                 new Button.OnClickListener() {
@@ -292,8 +382,13 @@ public class MainActivity extends Activity{
         public void run() {
             eat(); //this function can change value of mInterval.
             hunger--;
-            System.out.println(hunger + " THISISHUNGER");
-            mStepValueView.setText(String.valueOf(hunger));
+            if (hunger == 0){
+                hunger = 100;
+                Hearts--;
+                heartStats[Hearts].setImageResource(R.drawable.heartempty);
+            }
+            //System.out.println(hunger + " THISISHUNGER");
+            mStepValueView.setProgress(hunger);
             mHandler.postDelayed(mStatusChecker, mInterval);
         }
 
@@ -308,35 +403,69 @@ public class MainActivity extends Activity{
     };
 
     void eat() {
-        if (hunger < 100) {
-            if (numFries > 0 && hunger < 85) {
-                numFries--;
-                hunger += 15;
-            }
-            //numSteps++;
-            //mStepValueView.setText(String.valueOf(numSteps));
-            else if (numPizza > 85 && hunger < 90) {
-                numPizza--;
-                hunger += 10;
-            }
-            //numSteps++;
-            //mStepValueView.setText(String.valueOf(coins));
-            else if (numMilk > 0 && hunger < 70) {
-                numMilk--;
-                hunger += 30;
-            }
-            //numSteps++;
-            //mStepValueView.setText(String.valueOf(coins));
-            else if (numKale > 0 && hunger < 95) {
-                numKale--;
-                hunger += 5;
-            }
-            //numSteps++;
-           // mStepValueView.setText(String.valueOf(hunger));
-            mStepValueView.setText(String.valueOf(hunger));
+        if (true) {
+            if (hunger < 100) {
+                if (numFries > 0 && hunger <= 85) {
+                    numFries--;
+                    hunger += 15;
 
+
+                    cIm.setBackground(anim1);
+                    anim1.stop();
+                    anim1.start();
+                    //anim1.stop();
+
+
+                }
+                //numSteps++;
+                //mStepValueView.setText(String.valueOf(numSteps));
+                else if (numPizza > 85 && hunger <= 90) {
+                    numPizza--;
+                    hunger += 10;
+                    cIm.setBackground(anim2);
+                    anim2.stop();
+                    anim2.start();
+                    //anim2.stop();
+
+                }
+                //numSteps++;
+                //mStepValueView.setText(String.valueOf(coins));
+                else if (numMilk > 0 && hunger <= 70) {
+                    numMilk--;
+                    hunger += 30;
+                    cIm.setBackground(anim3);
+                    anim3.stop();
+                    anim3.start();
+                    //anim3.stop();
+
+                }
+                //numSteps++;
+                //mStepValueView.setText(String.valueOf(coins));
+                else if (numKale > 0 && hunger <= 95) {
+                    numKale--;
+                    hunger += 5;
+                    cIm.setBackground(anim4);
+                    anim4.stop();
+                    anim4.start();
+                    //anim4.stop();
+
+                }
+
+                //numSteps++;
+                // mStepValueView.setText(String.valueOf(hunger));
+                //mStepValueView.setText(String.valueOf(hunger));
+                if (hunger == 100 && Hearts < 5) {
+                    heartStats[Hearts].setImageResource(R.drawable.heartfull);
+                    Hearts++;
+
+                }
+
+            }
         }
-        mStepValueView.setText(String.valueOf(hunger));
+        /*catch (InterruptedException e){
+
+        }*/
+        mStepValueView.setProgress(hunger);
     }
 
     void startRepeatingTask() {
@@ -347,4 +476,10 @@ public class MainActivity extends Activity{
     void stopRepeatingTask() {
         mHandler.removeCallbacks(mStatusChecker);
     }
+
+
+
+
+
+
 }

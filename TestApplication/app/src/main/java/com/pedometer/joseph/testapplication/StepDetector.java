@@ -18,13 +18,13 @@
 
 package com.pedometer.joseph.testapplication;
 
-import java.util.ArrayList;
-
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
+
+import java.util.ArrayList;
 
 /**
  * Detects steps and notifies all listeners (that implement StepListener).
