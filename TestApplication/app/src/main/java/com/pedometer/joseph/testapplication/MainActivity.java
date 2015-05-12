@@ -27,16 +27,22 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 
 public class MainActivity extends Activity{
+    private int mInterval = 3000; // 5 seconds by default, can be changed later
+    private Handler mHandler;
+    private int hInterval = 60000;
+    private Handler hHandler;
     private SharedPreferences mSettings;
     //private PedometerSettings mPedometerSettings;
     //private Utils mUtils;
 
     private TextView mStepValueView;
-    private TextView mPaceValueView;
+    private TextView mCoinView;
     private TextView mDistanceValueView;
     private TextView mSpeedValueView;
     private TextView mCaloriesValueView;
@@ -52,6 +58,17 @@ public class MainActivity extends Activity{
     private float mMaintainInc;
     private boolean mQuitting = false;
 
+    private int hunger;
+    private int happiness;
+    private int coins;
+
+    private int numFries;
+    private int numPizza;
+    private int numMilk;
+    private int numCarrots;
+    private int numKale;
+
+
     private TextView textView;
     private SensorManager mSensorManager;
     private Sensor mStepCounterSensor;
@@ -61,25 +78,112 @@ public class MainActivity extends Activity{
     private float currentY;
     private int numSteps;
     private int Threshold;
+    private int ThreshMax;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mHandler = new Handler();
+        hHandler = new Handler();
 
 
         //mStepValue = 0;
         //mPaceValue = 0;
 
         setContentView(R.layout.activity_main);
-        mStepValueView = (TextView)findViewById(R.id.step_value);
+        mStepValueView = (TextView)findViewById(R.id.healthView);
+        mCoinView = (TextView)findViewById(R.id.coinView);
+
+        hunger = 100;
+        happiness = 100;
+        coins = 0;
 
         previousY = 0;
         currentY = 0;
         numSteps = 0;
-        Threshold = 10;
+        Threshold = 5;
+        ThreshMax = 25;
+        mStepValueView.setText(String.valueOf(hunger));
+
+        mCoinView.setText(String.valueOf(coins));
+
+        numFries = 0;
+        numPizza = 0;
+        numMilk = 0;
+        numCarrots = 0;
+        numKale = 0;
+
+        ImageButton buyB = (ImageButton)findViewById(R.id.buyBanana);
+
+        buyB.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        if (coins >= 60) {
+                            numFries++;
+                            coins-=60;
+                            mCoinView.setText(String.valueOf(coins));
+
+                        }
+                    }
+                }
+        );
+
+        ImageButton buyA = (ImageButton)findViewById(R.id.buyApple);
+
+        buyA.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        if (coins >= 40) {
+                            numPizza++;
+                            coins -= 40;
+                            mCoinView.setText(String.valueOf(coins));
+
+                        }
+                    }
+                }
+        );
+
+        ImageButton buyP = (ImageButton)findViewById(R.id.buyPine);
+
+        buyP.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        if (coins >= 90) {
+                            numMilk++;
+                            coins -= 90;
+                            mCoinView.setText(String.valueOf(coins));
+
+                        }
+                    }
+                }
+        );
+
+        ImageButton buyO = (ImageButton)findViewById(R.id.buyOrange);
+
+        buyO.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        if (coins >= 20) {
+                            numKale++;
+                            coins -= 20;
+                            mCoinView.setText(String.valueOf(coins));
+
+                        }
+                    }
+                }
+        );
+
+
+
+
+
+
+
 
         enableAccelerometerListening();
+        startRepeatingTask();
 
 
         /*super.onCreate(savedInstanceState);
@@ -108,10 +212,13 @@ public class MainActivity extends Activity{
                 public void onSensorChanged(SensorEvent event) {
                     float y = event.values[1];
                     currentY = y;
-                    if (Math.abs(currentY - previousY) > Threshold){
-                        numSteps++;
-                        mStepValueView.setText(String.valueOf(numSteps));
+                    //System.out.println(currentY);
+                    if (Math.abs(currentY - previousY) > Threshold && Math.abs(currentY - previousY) < ThreshMax){
+                        coins++;
+                        mCoinView.setText(String.valueOf(coins));
+                        //System.out.println(currentY);
                     }
+                    previousY = currentY;
                 }
 
                 @Override
@@ -150,6 +257,7 @@ public class MainActivity extends Activity{
 
     protected void onStop() {
         super.onStop();
+        //stopRepeatingTask();
         //mSensorManager.unregisterListener(this, mStepCounterSensor);
         //mSensorManager.unregisterListener(this, mStepDetectorSensor);
     }
@@ -173,5 +281,70 @@ public class MainActivity extends Activity{
     }*/
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // TODO Auto-generated method stub
+    }
+
+
+
+
+
+    Runnable mStatusChecker = new Runnable() {
+        @Override
+        public void run() {
+            eat(); //this function can change value of mInterval.
+            hunger--;
+            System.out.println(hunger + " THISISHUNGER");
+            mStepValueView.setText(String.valueOf(hunger));
+            mHandler.postDelayed(mStatusChecker, mInterval);
+        }
+
+        //@Override
+        /*public void decH(){
+            hunger--;
+            mStepValueView.setText(String.valueOf(hunger));
+
+            //mCoinView.setText(String.valueOf(coins));
+            hHandler.postDelayed(mStatusChecker, mInterval);
+        }*/
+    };
+
+    void eat() {
+        if (hunger < 100) {
+            if (numFries > 0 && hunger < 85) {
+                numFries--;
+                hunger += 15;
+            }
+            //numSteps++;
+            //mStepValueView.setText(String.valueOf(numSteps));
+            else if (numPizza > 85 && hunger < 90) {
+                numPizza--;
+                hunger += 10;
+            }
+            //numSteps++;
+            //mStepValueView.setText(String.valueOf(coins));
+            else if (numMilk > 0 && hunger < 70) {
+                numMilk--;
+                hunger += 30;
+            }
+            //numSteps++;
+            //mStepValueView.setText(String.valueOf(coins));
+            else if (numKale > 0 && hunger < 95) {
+                numKale--;
+                hunger += 5;
+            }
+            //numSteps++;
+           // mStepValueView.setText(String.valueOf(hunger));
+            mStepValueView.setText(String.valueOf(hunger));
+
+        }
+        mStepValueView.setText(String.valueOf(hunger));
+    }
+
+    void startRepeatingTask() {
+        mStatusChecker.run();
+    }
+
+
+    void stopRepeatingTask() {
+        mHandler.removeCallbacks(mStatusChecker);
     }
 }

@@ -8,7 +8,12 @@
 
     <string name="steps">steps</string>
     <string name="Points">POINTS</string>
-    <string name="Mood">HEALTH</string>
+    <string name="Mood">HAPPINESS</string>
+    <string name="Health">HEALTH</string>
+    <string name="Coins">COINS</string>
+    <string name="Hearts">HEARTS</string>
+
+
     <string name="kilometers">kilometers</string>
     <string name="miles">miles</string>
     <string name="steps_per_minute">steps / minute</string>
@@ -25,6 +30,12 @@
     <string name="Milk">Milk</string>
     <string name="Carrot">Carrots</string>
     <string name="Kale">Kale</string>
+
+    <string name="pFries">1c</string>
+    <string name="pPizza">3c</string>
+    <string name="pMilk">5c</string>
+    <string name="pCarrot">10c</string>
+    <string name="pKale">30c</string>
 
     <string name="desired_pace">Desired pace:</string>
     <string name="desired_speed">Desired speed:</string>
